@@ -13,17 +13,11 @@
 - `pending`，初始态（执行态），代表执行中。
 - `fulfilled`成功态，代表操作成功完成。
 - `rejected`失败态，代表操作失败。
-
-## 基本语法
-
-```
-const p1 = new MyPromise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('result')
-  }, 1000);
-})
-p1.then(res => console.log(res))
-```
+## 缺点
+1. 错误必须被捕获（不捕获反应不到外面）。
+2. 需要写回调函数。
+3. 一旦新建就会立即执行，无法中途取消。
+4. 无法得知pending状态，当处于 pending 状态时，无法得知目前进展到哪一个阶段（刚刚开始还是即将完成）。
 
 ### 参数
 #### executor

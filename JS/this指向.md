@@ -1,7 +1,6 @@
 ## this 指向
 this始终指向调用它的那个对象。
 
-
 ## 修改this指向的方法
 ```
     var name = "windowsName";
@@ -91,8 +90,6 @@ this始终指向调用它的那个对象。
 
     a.func2()            // Cherry
 ```
-
-
 
 ## 参考
 https://segmentfault.com/a/1190000006731988  
