@@ -4,5 +4,8 @@
 因为在有道云笔记上的一篇总结意外丢失，痛定思痛，记录于此。  
 ## 目的
 愿尽己之脑力，结诸位之欢心。
-## 目标
-https://zhimap.com/medit/a4cc73fcd9a74737b7f1f73ac7c8bb01
+## todo
+- [ ] <<webkit技术揭秘>>
+- [ ] 移动端适配方案
+- [ ] Set、Map、WeakSet 和 WeakMap
+- [ ] 算法
