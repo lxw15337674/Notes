@@ -9,8 +9,23 @@
 > 变量提升
 > - 所有的声明都会提升到作用域的最顶上去。
 > - 函数声明的优先级高于变量申明的优先级，并且函数声明和函数定义的部分一起被提升。
+
+块级作用域:
+```
+if(true){
+  var color = "red"
+}
+console.log(color)  //'red'
+
+if(true){
+  let color = 'red'
+}
+console.log(color) //ReferenceError
+```
+
+
 #### 在es5环境下实现let
-> ![image](https://user-gold-cdn.xitu.io/2020/4/5/1714616e2fd53bf8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![image](https://user-gold-cdn.xitu.io/2020/4/5/1714616e2fd53bf8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ####  在es5环境下实现const
 

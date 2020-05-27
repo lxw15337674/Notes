@@ -1,4 +1,5 @@
  OOP （Object Oriented Programming）
+ 面向对象三要素：封装，继承，多态
 写一个类Person，拥有属性age和name，拥有方法say(something)，
 再写一个类Superman，继承Person，拥有自己的属性power，拥有自己的方法fly(height) ES5方式
 ```
