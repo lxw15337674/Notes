@@ -1,11 +1,26 @@
 # HTML5
-- 语义化标签类
-    合理的标签干合理的事情
-- 音视频标签
-    - video
-    - Audio
-- canvas/SVG
-- history API
-- websocket
-- Web Workers
-- SSE
+- 服务器增强
+    - 新增websocket
+    - 新增SSE
+    - 新增webRTC
+- 离线缓存
+    - 新增AppCache
+    - online与offline事件
+    - localStorage 和sessionStorage
+    - indexedDB
+    - File API
+- 多媒体
+    - Video 视频标签
+    - Audio 音频标签
+    - Camera API 可控制摄像头
+- 图像绘制
+    - Canvas 可编辑图像
+    - WebGL 可渲染3D影像
+    - SVG 可制作矢量图形
+- 更多集成
+    - Web Workers能够把js计算委托给后台线程
+    - XMLHttpRequest 升级
+    - History API 允许对浏览器历史记录进行操作
+    - 新增conentEditable属性
+    - 拖放API、全屏API、指针锁定API
+    - requestAnimationFrame允许控制动画渲染以获得更优性能。
