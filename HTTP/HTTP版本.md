@@ -3,6 +3,8 @@
 HTTP是一种`超文本传输协议（Hypertext Transfer Protocol)`，HTTP是一个基于TCP实现的应用层协议。一个两点之间传输数据的约定和规范。
 
 ![image](https://user-gold-cdn.xitu.io/2018/5/11/1634e5e73955739d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+
 ## 主要内容
 分为三部分，超文本、传输、协议
 - 超文本是不止文本，还包含图片、音频、视频等数据
