@@ -71,3 +71,8 @@
 通过z-idnex、opacity、translate3D的css动画属性等会生成复合图层，两者可单独绘制，互不影响
 
 ![image](https://segmentfault.com/img/bVCZ1H?w=694&h=340)
+
+
+## 引用
+[神三元](http://47.98.159.95/my_blog/browser-render/001.html)
+[浏览器层合成与页面渲染优化](https://juejin.im/post/5da52531518825094e373372)

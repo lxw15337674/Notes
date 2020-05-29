@@ -1,7 +1,7 @@
 # UDP、TCP
 ## 总结
-TCP（Transmission Control Protocol：传输控制协议；提供面向连接的，可靠的数据传输服务。
-UDP（User Datagram Protocol）：用户数据报协议；提供无连接的，尽最大努力的数据传输服务（不保证数据传输的可靠性）。
+TCP(`Transmission Control Protocol`)：传输控制协议；提供面向连接的，可靠的数据传输服务。
+UDP（`User Datagram Protocol`）：用户数据报协议；提供无连接的，尽最大努力的数据传输服务（不保证数据传输的可靠性）。
 ## UDP
 ### 概念
 全称`User Datagram Protocol`,用户数据报协议。它不需要所谓的握手操作，从而加快了通信速度，允许网络上的其他主机在接收方同意通信之前进行数据传输。

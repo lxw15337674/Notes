@@ -21,6 +21,11 @@ js中的**事件触发器**维护宏任务和微任务两个队列，微任务�
 - Promise
 - Async/Await
 
+## 关于process.nextTick的一点说明
+process.nextTick 是一个独立于 eventLoop 的任务队列。
+
+在每一个 eventLoop 阶段完成后会去检查这个队列，如果里面有任务，会让这部分任务优先于微任务执行。
+
 ## 引用
 - [一文带你搞懂JavaScript事件循环](
 https://juejin.im/post/5d2036106fb9a07eb15d76e9 )

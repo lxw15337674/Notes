@@ -51,6 +51,5 @@ HTTP是一种`超文本传输协议（Hypertext Transfer Protocol)`，HTTP是一
 ## 引用
 [关于http2.0的HTTP 2.0 的二进制帧、流、多路复用](https://juejin.im/post/5c88f2066fb9a049c043e420)
 [HTTP2 详解](https://blog.wangriyu.wang/2018/05-HTTP2.html)
-[http发展史(http0.9、http1.0、http1.1、http2、http3)梳理笔记]
-(https://juejin.im/post/5dbe8eba5188254fe019dabb#heading-9)
-
+[http发展史(http0.9、http1.0、http1.1、http2、http3)梳理笔记](https://juejin.im/post/5dbe8eba5188254fe019dabb#heading-9)
+[神三元](http://47.98.159.95/my_blog/http/002.html)
