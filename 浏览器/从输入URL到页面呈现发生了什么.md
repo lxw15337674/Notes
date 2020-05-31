@@ -53,15 +53,14 @@
 - 通过后再根据路径，执行对应方法，执行完毕后返回一个http响应包。
 
 ### 浏览器解析渲染页面
-浏览器获得HTML、css、js文件后，
-开始进行解析：
+浏览器获得HTML、css、js文件后，开始进行解析：
 1. 解析html建立dom树
 2. 解析css构建style树
 3. dom树和style树两者结合生成布局（Layout)树，然后计算布局树节点的坐标位置。
 > 值得注意的是，这棵布局树值包含可见元素，对于 head标签和设置了display: none的元素，将不会被放入其中。
 
 渲染过程：
-1. 建立图层树（Layer Tree)，
+1. 建立图层树（Layer Tree)
 2. 生成绘制列表
 3. 生成图块并栅格化
 4. 显示器显示内容
@@ -72,3 +71,8 @@
 通过z-idnex、opacity、translate3D的css动画属性等会生成复合图层，两者可单独绘制，互不影响
 
 ![image](https://segmentfault.com/img/bVCZ1H?w=694&h=340)
+
+
+## 引用
+[神三元](http://47.98.159.95/my_blog/browser-render/001.html)
+[浏览器层合成与页面渲染优化](https://juejin.im/post/5da52531518825094e373372)

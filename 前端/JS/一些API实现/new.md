@@ -18,3 +18,6 @@ function myNew(Fn,...arg){
     return obj1 instanceof Object ? obj1 : obj;
 }
 ```
+
+## 详解
+[深度解析原型中的各个难点](https://yuchengkai.cn/blog/2018-03-04.html#prototype)

@@ -3,6 +3,8 @@
 HTTP是一种`超文本传输协议（Hypertext Transfer Protocol)`，HTTP是一个基于TCP实现的应用层协议。一个两点之间传输数据的约定和规范。
 
 ![image](https://user-gold-cdn.xitu.io/2018/5/11/1634e5e73955739d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+
 ## 主要内容
 分为三部分，超文本、传输、协议
 - 超文本是不止文本，还包含图片、音频、视频等数据
@@ -49,6 +51,5 @@ HTTP是一种`超文本传输协议（Hypertext Transfer Protocol)`，HTTP是一
 ## 引用
 [关于http2.0的HTTP 2.0 的二进制帧、流、多路复用](https://juejin.im/post/5c88f2066fb9a049c043e420)
 [HTTP2 详解](https://blog.wangriyu.wang/2018/05-HTTP2.html)
-[http发展史(http0.9、http1.0、http1.1、http2、http3)梳理笔记]
-(https://juejin.im/post/5dbe8eba5188254fe019dabb#heading-9)
-
+[http发展史(http0.9、http1.0、http1.1、http2、http3)梳理笔记](https://juejin.im/post/5dbe8eba5188254fe019dabb#heading-9)
+[神三元](http://47.98.159.95/my_blog/http/002.html)
