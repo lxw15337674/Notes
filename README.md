@@ -6,7 +6,7 @@
 愿尽己之脑力，结诸位之欢心。
 ## todo
 - [ ] <<webkit技术揭秘>>
-- [ ] 移动端适配方案
+- [x] 移动端适配方案
 - [ ] Set、Map、WeakSet 和 WeakMap
 - [ ] 算法
-- [ ] TS  
+- [x] TS  

@@ -105,3 +105,6 @@ console.log(Symbol.keyFor(s1)); // "foo"
 var s2 = Symbol("foo");
 console.log(Symbol.keyFor(s2) ); // undefined
 ```
+
+## 引用
+[ES6 系列之模拟实现 Symbol 类型](https://juejin.im/post/5b1f4c21f265da6e0f70bb19#heading-8)

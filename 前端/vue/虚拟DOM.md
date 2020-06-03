@@ -123,7 +123,9 @@ C                                      C
     ![image](https://github.com/aooy/blog/blob/master/images/issues-2/diff7.png?raw=true)
 
 
-
+## 详解
 [图解updateChildren](https://juejin.im/post/5affd01551882542c83301da#heading-9)
 
-https://github.com/aooy/blog/issues/2
+[解析vue2.0的diff算法
+](https://github.com/aooy/blog/issues/2)
+[Virtual Dom 算法简述](http://caibaojian.com/interview-map/frontend/framework.html#virtual-dom-%E7%AE%97%E6%B3%95%E7%AE%80%E8%BF%B0)
