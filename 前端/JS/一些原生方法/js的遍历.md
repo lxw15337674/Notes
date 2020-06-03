@@ -8,6 +8,14 @@
 `array.map()` |遍历数组，与forEach类,区别是不改变原数组，可以使用return返回结果，break，contiune不生效
 `Object.getOwnPropertyNames(obj)`|可以得到自身所有的属性(包括不可枚举),但得不到原型链上的属性, Symbols 属性也得不到.
 `Reflect.ownKeys(target)`|该方法用于返回对象的所有属性，基本等同于 Object.getOwnPropertyNames() 与 Object.getOwnPropertySymbols 之和。
+```
+Reflect.ownKeys()遍历规则:
+    - 首先遍历所有数值键，按照数值升序排列。
+    - 其次遍历所有字符串键，按照加入时间升序排列。
+    - 最后遍历所有 Symbol 键，按照加入时间升序排列。
+Reflect.ownKeys({ [Symbol()]:0, b:0, 10:0, 2:0, a:0 })
+// ['2', '10', 'b', 'a', Symbol()]
+```
 
 >
     for (let i = 0; i < 10; i++) {
