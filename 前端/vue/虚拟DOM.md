@@ -133,3 +133,4 @@ C                                      C
 [解析vue2.0的diff算法
 ](https://github.com/aooy/blog/issues/2)
 [Virtual Dom 算法简述](http://caibaojian.com/interview-map/frontend/framework.html#virtual-dom-%E7%AE%97%E6%B3%95%E7%AE%80%E8%BF%B0)
+[揭秘Vue中的Virtual Dom](https://github.com/ljianshu/Blog/issues/69)

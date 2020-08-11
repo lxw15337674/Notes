@@ -68,3 +68,6 @@ TCP| UDP
 有发送确认|没有发送确认
 会使用握手协议，例如SYN,SYN-ACK,ACK|无握手协议
 可靠的，可以确保数据传送到目标|不能保证讲数据传送到目标
+
+## 详解
+[TCP和UDP比较](https://github.com/ljianshu/Blog/issues/61)

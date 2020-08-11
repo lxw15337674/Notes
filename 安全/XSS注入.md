@@ -60,7 +60,7 @@ XSS特点点是让恶意脚本直接能在浏览器中执行。
 
 
 
-
 ## 引用
 [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
 [如何防止XSS攻击？](https://juejin.im/post/5bad9140e51d450e935c6d64)
+[常见六大Web安全攻防解析 ](https://github.com/ljianshu/Blog/issues/56)

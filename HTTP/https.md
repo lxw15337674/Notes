@@ -20,7 +20,6 @@ TLS的握手阶段是发生在TCP握手之后
 安全性	|弱|	由于加密机制，安全性强
 速度 | 较快 | 因为HTTPS除了TCP握手的三个包，还要加上SSL握手的九个包。一般的HTTPS连接只在第一次握手时使用非对称加密
 
-
 > 对称密钥加密:指加密和解密使用同一个密钥的方式，这种方式存在的最大问题就是密钥发送问题，即如何安全地将密钥发给对方；
 非对称加密:指使用一对非对称密钥，即公钥和私钥，公钥可以随意发布，但私钥只有自己知道。发送密文的一方使用对方的公钥进行加密处理，对方接收到加密信息后，使用自己的私钥进行解密。
 由于非对称加密的方式不需要发送用来解密的私钥，所以可以保证安全性；但是和对称加密比起来，非常的慢。
@@ -73,3 +72,4 @@ http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
 https://mp.weixin.qq.com/s/StqqafHePlBkWAPQZg3NrA
 http://47.98.159.95/my_blog/browser-security/003.html#%E6%B7%BB%E5%8A%A0%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6
 https://juejin.im/post/5ed5b034f265da76ee1f5311#heading-17
+https://github.com/ljianshu/Blog/issues/50

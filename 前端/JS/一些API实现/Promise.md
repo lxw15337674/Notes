@@ -57,7 +57,7 @@ Promise.prototype.then(undefined, onRejected) `
 https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc
 https://github.com/xieranmaya/blog/issues/3
 ###  简单版实现
-```
+```javascript
 class myPromise{
     constructor(fn){
         this.resolveQueue = []
@@ -91,7 +91,7 @@ p1.then(res => console.log(res))
 
 
 完整实现：
-```
+```javascript
 //Promise/A+规范的三种状态
 const PENDING = 'pending'
 const FULFILLED = 'fulfilled'
@@ -237,4 +237,9 @@ new myPromise(function (resolve, reject) {
 })
 
 
-```~
+​```~
+```
+
+## 引用
+
+https://github.com/ljianshu/Blog/issues/81

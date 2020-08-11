@@ -6,13 +6,19 @@ CSS 中的一个渲染机制，BFC 就相当于一个盒子，内部的元素与
 
 ## 形成条件
 
-- 根元素或其它包含它的元素；
-- 浮动 (元素的 float 不为 none)；
-- 绝对定位元素 (元素的 position 为 absolute 或 fixed)；
-- 行内块 inline-blocks(元素的 display: inline-block)；
-- 表格单元格(元素的 display: table-cell，HTML 表格单元格默认属性)；
-- overflow 的值不为 visible 的元素；
-- 弹性盒 flex boxes (元素的 display: flex 或 inline-flex)；
+- float为 left|right
+- overflow为 hidden|auto|scroll
+- display为 table-cell|table-caption|inline-block|inline-flex|flex
+- position为 absolute|fixed
+- 根元素
+
+## BFC布局规则
+
+- 内部的Box会在垂直方向，一个接一个地放置(即块级元素独占一行)。
+- BFC的区域不会与float box重叠(**利用这点可以实现自适应两栏布局**)。
+- 内部的Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠(**margin重叠三个条件:同属于一个BFC;相邻;块级元素**)。
+- 计算BFC的高度时，浮动元素也参与计算。（清除浮动 haslayout）
+- BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。
 
 ## 特性
 
@@ -44,3 +50,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context
 https://juejin.im/post/59b73d5bf265da064618731d
 
 http://47.98.159.95/my_blog/css/008.html
+
+https://github.com/ljianshu/Blog/issues/15
