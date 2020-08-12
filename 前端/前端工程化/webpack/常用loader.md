@@ -4,10 +4,11 @@
 ---|---
 babel-loader | 转换js新特性语法
 stylus-loader| 将stylus文件转换成css
-css-loader | 支持.CSS文件的加载和清洗
-style-loader | 通过向 DOM 中注入 <style> 标签实现css效果
+css-loader | 把多个css文件整合到一个css文件
+style-loader | 把整合的css部分挂载到head标签中。
 ts-loader|  将ts转换为js
-file-loader|  给每张图片都生成一个随机的hash值作为图片的名字，并返回其公共URL
+file-loader|  生成的文件的文件名就是文件内容的 MD5 哈希值并会保留所引用资源的原始扩展名
+url-loader | 把图片以Base64格式打包到bundle.js文件中
 raw-loader|  将文件以字符串的形式导入
 thread-loader| 多进程打包js和css
 image-webpack-loader | 压缩图片大小
