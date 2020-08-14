@@ -243,3 +243,4 @@ new myPromise(function (resolve, reject) {
 ## 引用
 
 https://github.com/ljianshu/Blog/issues/81
+[详解Promise/Promise/A+ 规范](https://www.jianshu.com/p/2207b01e1174)

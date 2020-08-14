@@ -6,6 +6,9 @@
 | CompressionWebpackPlugin    | gzip 压缩  |
 | happypack                   | 多线程处理 |
 | webpack-merge               | 配置合并   |
+| splitChunksPlugin           | 代码分隔   |
+
+
 
 ## 详解
 
