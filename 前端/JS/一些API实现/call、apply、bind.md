@@ -19,7 +19,7 @@ Function.prototype.myCall= function(obj,...args){
         obj = obj||window //  若没传入，则默认绑定window对象
         obj[fn] = this
         let result = obj[fn](...args)
-        delete obj.fn
+        delete obj[fn]
         return result
     }
 ```
