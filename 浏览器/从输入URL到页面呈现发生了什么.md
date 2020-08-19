@@ -73,3 +73,6 @@
 [浏览器层合成与页面渲染优化](https://juejin.im/post/5da52531518825094e373372)
 
 [[各种公司] 输入url后发生了什么](https://juejin.im/post/6844904110471249934#heading-3)
+
+[面试官：浏览器输入URL后发生了什么？
+](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649826404&idx=1&sn=e4ccac5fe9d96b26ca1d8d347276d2b1&chksm=f175eea7c60267b1b5b91e527dcdf81027f2f36c97cb1837b13ffbb5a1699e013a77f84d1d16&scene=21#wechat_redirect)

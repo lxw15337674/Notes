@@ -65,7 +65,6 @@ Function.prototype.myBind= function(obj,...args){
         let fn=() =>{
             self.call(obj,...args)
         }
-        fn.prototype= this.prototype
         return fn
     }
 ```
