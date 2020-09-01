@@ -7,7 +7,7 @@
 | css-loader             | 将css文件打包到js中                                          |
 | style-loader           | 将 css 代码以<style>标签的形式插入到 html 中。               |
 | ts-loader              | 将ts转换为js                                                 |
-| file-loader            | 生成的文件的文件名就是文件内容的 MD5 哈希值并会保留所引用资源的原始扩展名 |
+| file-loader            | 生成文件的文件名就是文件内容的 MD5 哈希值并会保留所引用资源的原始扩展名 |
 | url-loader             | 把图片以Base64格式打包到bundle.js文件中                      |
 | raw-loader             | 将文件以字符串的形式导入                                     |
 | thread-loader          | 多进程打包js和css                                            |

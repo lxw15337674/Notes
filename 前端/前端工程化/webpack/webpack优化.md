@@ -51,56 +51,37 @@
 
   - 监听文件变动 **忽略 node_modules** 目录能有效提高监听时的编译效率；
 
-- 缩小编译范围
-
-  :
+- 缩小编译范围:
 
   - modules: 指定模块路径，减少递归搜索；
-  - mainFields: 指定入口文件描述字段，减少搜索；
+- mainFields: 指定入口文件描述字段，减少搜索；
   - noParse: 避免对非模块化文件的加载；
   - includes/exclude: 指定搜索范围/排除不必要的搜索范围；
   - alias: 缓存目录，避免重复寻址；
-
-- ```
-  babel-loader
-  ```
-
-  :
+  
+- 
+  babel-loader:
 
   - 忽略`node_moudles`，避免编译第三方库中已经被编译过的代码；
   - 使用`cacheDirectory`，可以缓存编译结果，避免多次重复编译；
 
-- 多进程并发
-
-  :
+- 多进程并发:
 
   - webpack-parallel-uglify-plugin: 可多进程并发压缩 js 文件，提高压缩速度；
-  - HappyPack: 多进程并发文件的 Loader 解析；
-
-- 第三方库模块缓存
-
-  :
+- HappyPack: 多进程并发文件的 Loader 解析；
+  
+- 第三方库模块缓存:
 
   - DLLPlugin 和 DLLReferencePlugin 可以提前进行打包并缓存，避免每次都重新编译；
 
-- 使用分析
-
-  :
+- 使用分析:
 
   - Webpack Analyse / webpack-bundle-analyzer 对打包后的文件进行分析，寻找可优化的地方；
-  - 配置`profile：true`，对各个编译阶段耗时进行监控，寻找耗时最多的地方；
+- 配置`profile：true`，对各个编译阶段耗时进行监控，寻找耗时最多的地方；
+  
+- 
+  source-map:
+  
+    - 开发: `cheap-module-eval-source-map`；
+    - 生产: `hidden-source-map`；
 
-- ```
-  source-map
-  ```
-
-  :
-
-  - 开发: `cheap-module-eval-source-map`；
-  - 生产: `hidden-source-map`；
-
-
-作者：郭东东
-链接：https://juejin.im/post/6844903830979608584
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

@@ -76,7 +76,7 @@ bind 还有一个特点： new 会改变 this 指向，如果 bind 绑定后的�
 
 ```
 Function.prototype.myBind= function(obj,...args){
-      let self = this
+        let self = this
         let fn=() =>{
             self.call(obj,...args)
         }
