@@ -51,6 +51,26 @@ Promise.prototype.then(undefined, onRejected) `
 #### `race(iterable)`
 返回一个promise，执行参数迭代器中所有的promise，返回最先执行完成的promise结果。
 
+#### `allSettled(iterable)`
+返回一个promise，执行参数迭代器中所有的promise，只有等到所有参数实例都返回结果，才会结束。返回一个所有promise结果的列表，每个对象都有`status`属性，该属性的值只可能是字符串`fulfilled`或字符串`rejected`。`fulfilled`时，对象有`value`属性，`rejected`时有`reason`属性，对应两种状态的返回值。
+
+#### `any(iterable)`
+返回一个promise，执行参数迭代器中所有的promise。只要参数实例有一个变成`fulfilled`状态，包装实例就会变成`fulfilled`状态；如果所有参数实例都变成`rejected`状态，包装实例就会变成`rejected`状态。
+
+```javascript
+const resolved = Promise.resolve(42);
+const rejected = Promise.reject(-1);
+
+const allSettledPromise = Promise.allSettled([resolved, rejected]);
+
+allSettledPromise.then(function (results) {
+  console.log(results);
+});
+// [
+//    { status: 'fulfilled', value: 42 },
+//    { status: 'rejected', reason: -1 }
+// ]
+```
 
 ## 实现
 ## 参考
