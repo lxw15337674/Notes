@@ -6,7 +6,7 @@ class EventEmitter {
     }
     emit(eventName, ...args) {
         for (let fn of this.events[eventName]) {
-            fn.apply(null, args)
+            fn(...args)
         }
     }
     on(eventName, fn) {

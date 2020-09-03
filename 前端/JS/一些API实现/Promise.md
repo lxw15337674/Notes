@@ -3,6 +3,11 @@
 
 ## 诞生原因
 最开始解决异步函数的方法是回调函数，将要执行的函数作为参数，传入异步操作中。导致会无限嵌套，也就是回掉地狱，影响代码可读性。例如`asyncfn1(asyncfn2(asyncfn3()))`。
+## 缺点
+- 无法取消Promise，一旦新建它就会立即执行，无法中途取消。
+- 如果不设置回调函数，Promise内部抛出的错误，不会反应到外部。
+- 当处于pending状态时，无法得知目前进展到哪一个阶段（刚刚开始还是即将完成）。
+- then的写法相比await，明显在程序代码抒写上，更加繁琐。
 
 ## 原理
 将要执行的函数放入一个队列里，在异步函数执行结束后执行这个队列。
@@ -264,3 +269,4 @@ new myPromise(function (resolve, reject) {
 
 https://github.com/ljianshu/Blog/issues/81
 [详解Promise/Promise/A+ 规范](https://www.jianshu.com/p/2207b01e1174)
+[彻底理解Promise原理及全功能实现](https://juejin.im/post/6866372840451473415)

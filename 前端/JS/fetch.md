@@ -35,7 +35,7 @@ fetch(url).then(response => response.json())//解析为可读数据
 2. 脱离了XHR，是ES规范里新的实现方式
 缺点：
 1. fetch只对网络请求报错，对400，500都当做成功的请求，需要封装去处理
-2. fetch默认不会带cookie，需要添加配置项
+2. fetch默认不会带cookie，需要添加配置项： fetch(url, {credentials: 'include'})
 3. fetch不支持abort，不支持超时控制，使用setTimeout及Promise.reject的实现的超时控制并不能阻止请求过程继续在后台运行，造成了流量的浪费
 4. fetch没有办法原生监测请求的进度，而XHR可以
 
