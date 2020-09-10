@@ -61,9 +61,8 @@ call()接收参数列表，而 apply()接收一个参数数组
 
 ```
 Function.prototype.myBind= function(obj,...args){
-      let self = this
         let fn=() =>{
-            self.call(obj,...args)
+            this.call(obj,...args)
         }
         return fn
     }
@@ -76,9 +75,8 @@ bind 还有一个特点： new 会改变 this 指向，如果 bind 绑定后的�
 
 ```
 Function.prototype.myBind= function(obj,...args){
-        let self = this
         let fn=() =>{
-            self.call(obj,...args)
+            this.call(obj,...args)
         }
         fn.prototype= this.prototype
         return fn

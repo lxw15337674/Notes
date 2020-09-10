@@ -39,4 +39,4 @@ TRACE  | 用于测试或诊断
 
 ### 详解
 [99%的人都理解错了HTTP中GET与POST的区别
-](http://suo.im/60haCM)
+](https://www.jianshu.com/p/678ff764a253)
