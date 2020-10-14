@@ -73,3 +73,4 @@ https://mp.weixin.qq.com/s/StqqafHePlBkWAPQZg3NrA
 http://47.98.159.95/my_blog/browser-security/003.html#%E6%B7%BB%E5%8A%A0%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6
 https://juejin.im/post/5ed5b034f265da76ee1f5311#heading-17
 https://github.com/ljianshu/Blog/issues/50
+[看完这篇文章，我奶奶都懂了https的原理](https://www.cnblogs.com/sujing/p/10927569.html)
