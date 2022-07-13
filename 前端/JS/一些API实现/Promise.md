@@ -3,6 +3,11 @@
 
 ## 诞生原因
 最开始解决异步函数的方法是回调函数，将要执行的函数作为参数，传入异步操作中。导致会无限嵌套，也就是回掉地狱，影响代码可读性。例如`asyncfn1(asyncfn2(asyncfn3()))`。
+## 缺点
+- 无法取消Promise，一旦新建它就会立即执行，无法中途取消。
+- 如果不设置回调函数，Promise内部抛出的错误，不会反应到外部。
+- 当处于pending状态时，无法得知目前进展到哪一个阶段（刚刚开始还是即将完成）。
+- then的写法相比await，明显在程序代码抒写上，更加繁琐。
 
 ## 原理
 将要执行的函数放入一个队列里，在异步函数执行结束后执行这个队列。
@@ -51,13 +56,33 @@ Promise.prototype.then(undefined, onRejected) `
 #### `race(iterable)`
 返回一个promise，执行参数迭代器中所有的promise，返回最先执行完成的promise结果。
 
+#### `allSettled(iterable)`
+返回一个promise，执行参数迭代器中所有的promise，只有等到所有参数实例都返回结果，才会结束。返回一个所有promise结果的列表，每个对象都有`status`属性，该属性的值只可能是字符串`fulfilled`或字符串`rejected`。`fulfilled`时，对象有`value`属性，`rejected`时有`reason`属性，对应两种状态的返回值。
+
+#### `any(iterable)`
+返回一个promise，执行参数迭代器中所有的promise。只要参数实例有一个变成`fulfilled`状态，包装实例就会变成`fulfilled`状态；如果所有参数实例都变成`rejected`状态，包装实例就会变成`rejected`状态。
+
+```javascript
+const resolved = Promise.resolve(42);
+const rejected = Promise.reject(-1);
+
+const allSettledPromise = Promise.allSettled([resolved, rejected]);
+
+allSettledPromise.then(function (results) {
+  console.log(results);
+});
+// [
+//    { status: 'fulfilled', value: 42 },
+//    { status: 'rejected', reason: -1 }
+// ]
+```
 
 ## 实现
 ## 参考
 https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc
 https://github.com/xieranmaya/blog/issues/3
 ###  简单版实现
-```
+```javascript
 class myPromise{
     constructor(fn){
         this.resolveQueue = []
@@ -91,7 +116,7 @@ p1.then(res => console.log(res))
 
 
 完整实现：
-```
+```javascript
 //Promise/A+规范的三种状态
 const PENDING = 'pending'
 const FULFILLED = 'fulfilled'
@@ -237,4 +262,11 @@ new myPromise(function (resolve, reject) {
 })
 
 
-```~
+​```~
+```
+
+## 引用
+
+https://github.com/ljianshu/Blog/issues/81
+[详解Promise/Promise/A+ 规范](https://www.jianshu.com/p/2207b01e1174)
+[彻底理解Promise原理及全功能实现](https://juejin.im/post/6866372840451473415)

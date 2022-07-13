@@ -17,7 +17,26 @@ var Vnode = {
 };
 ```
 
+### 设计思想
+
+1. 提供一种方便的工具，使得开发效率得到保证。
+2. 保证最小化的DOM操作，使得执行效率得到保证
+
+## 优势：
+
+DOM 引擎、JS 引擎 相互独立，但又工作在同一线程（主线程） JS 代码调用 DOM API 必须 挂起 JS 引擎、转换传入参数数据、激活 DOM 引擎，DOM 重绘后再转换可能有的返回值，最后激活 JS 引擎并继续执行若有频繁的 DOM API 调用，且浏览器厂商不做“批量处理”优化， 引擎间切换的单位代价将迅速积累若其中有强制重绘的 DOM API 调用，重新计算布局、重新绘制图像会引起更大的性能消耗。
+
+其次是 VDOM 和真实 DOM 的区别和优化：
+
+1. 虚拟 DOM 不会立马进行排版与重绘操作
+2. 虚拟 DOM 进行频繁修改，然后一次性比较并修改真实 DOM 中需要改的部分，最后在真实 DOM 中进行排版与重绘，减少过多DOM节点排版与重绘损耗
+3. 虚拟 DOM 有效降低大面积真实 DOM 的重绘与排版，因为最终与真实 DOM 比较差异，可以只渲染局部
+
+
+
+
 ### 完整的Vnode
+
 ```
 // body下的 <div id="v" class="classA"><div> 对应的 oldVnode 就是
 
@@ -90,6 +109,7 @@ C                                      C
 3. 进行子节点比较
     利用双指针，对新老的子节点进行比较。一共4中比较方式，如果4种比较都没匹配，如果设置了key，则会用key进行比较，在比较的过程汇总，变量会往中间靠，一旦遍历完成即会结束比较。
     
+
 ![image](https://github.com/aooy/blog/blob/master/images/issues-2/diff2.png?raw=true)
 
 
@@ -116,7 +136,7 @@ C                                      C
     ![image](https://github.com/aooy/blog/blob/master/images/issues-2/diff4.png?raw=true)
 
 3. 当newCh中的节点oldCh里没有， 将新节点插入到`oldStartVnode.el`的前边。
-    
+   
     ![image](https://github.com/aooy/blog/blob/master/images/issues-2/diff5.png?raw=true)
 
 结束时，分两种情况
@@ -133,3 +153,5 @@ C                                      C
 [解析vue2.0的diff算法
 ](https://github.com/aooy/blog/issues/2)
 [Virtual Dom 算法简述](http://caibaojian.com/interview-map/frontend/framework.html#virtual-dom-%E7%AE%97%E6%B3%95%E7%AE%80%E8%BF%B0)
+[揭秘Vue中的Virtual Dom](https://github.com/ljianshu/Blog/issues/69)
+[全面理解虚拟DOM，实现虚拟DOM](http://foio.github.io/virtual-dom/)

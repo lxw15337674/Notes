@@ -1,6 +1,6 @@
 # vue-cli
-## 集成功能
-集成plugin
+## 集成plugin
+
 | 名称                        | 描述       |
 | --------------------------- | ---------- |
 | progress-bar-webpack-plugin | 编译进度条 |
@@ -8,29 +8,37 @@
 | happypack                   | 多线程处理 |
 | webpack-merge               | 配置合并   |
 
-集成loader
+## 集成loader
 
-| 名称                        | 描述       |
-| --------------------------- | ---------- |
-babel-loader | 转换js新特性语法
-stylus-loader| 将stylus文件转换成css
-css-loader | 支持.CSS文件的加载和清洗
-style-loader | 通过向 DOM 中注入 <style> 标签实现css效果
-thread-loader| 多进程打包js和css
-eslint-loader | 通过 ESLint 检查 JavaScript 代码
-Style-Resources-Loader | 全局引入css文件，不用受到@import
+| 名称                   | 描述                                      |
+| ---------------------- | ----------------------------------------- |
+| babel-loader           | 转换js新特性语法                          |
+| stylus-loader          | 将stylus文件转换成css                     |
+| css-loader             | 支持.CSS文件的加载和清洗                  |
+| style-loader           | 通过向 DOM 中注入 <style> 标签实现css效果 |
+| thread-loader          | 多进程打包js和css                         |
+| eslint-loader          | 通过 ESLint 检查 JavaScript 代码          |
+| Style-Resources-Loader | 全局引入css文件，不用受到@import          |
 
 ## 额外配置
 
 1. 引入plugin
-|                         | 描述       |
-| --------------------------- | ---------- |
-CompressionWebpackPlugin| gzip压缩
 
-2. 引入loader
-|                         | 描述       |
-| --------------------------- | ---------- |
-image-webpack-loader | 压缩图片大小
+  | 名称         | 描述             |
+  | ------------ | ---------------- |
+  | babel-loader | 转换js新特性语法 |
+
+2. 
+
+  |                         | 描述       |
+  | --------------------------- | ---------- |
+  CompressionWebpackPlugin| gzip压缩
+
+3. 引入loader
+
+  | 名称                 | 描述         |
+  | -------------------- | ------------ |
+  | image-webpack-loader | 压缩图片大小 |
 
 
 1. 浏览器兼容

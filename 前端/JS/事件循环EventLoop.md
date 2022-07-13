@@ -20,6 +20,7 @@ js中的**事件触发器**维护宏任务和微任务两个队列，微任务�
 - process.nextTick(Node.js 环境)
 - Promise
 - Async/Await
+- MutationObserver（监视对DOM树所做更改）
 
 ## 关于process.nextTick的一点说明
 process.nextTick 是一个独立于 eventLoop 的任务队列。
@@ -34,3 +35,5 @@ https://juejin.im/post/5d2036106fb9a07eb15d76e9 )
 - [这一次，彻底弄懂 JavaScript 执行机制
 ](https://juejin.im/post/59e85eebf265da430d571f89 ) 
 - [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://segmentfault.com/a/1190000012925872#item-7  )
+- [浏览器与Node的事件循环(Event Loop)有何区别](https://github.com/ljianshu/Blog/issues/54)
+- [微任务、宏任务与Event-Loop]（https://juejin.im/post/6844903657264136200)

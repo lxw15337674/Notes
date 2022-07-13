@@ -7,6 +7,5 @@
 ## todo
 - [ ] <<webkit技术揭秘>>
 - [x] 移动端适配方案
-- [ ] Set、Map、WeakSet 和 WeakMap
 - [ ] 算法
 - [x] TS  

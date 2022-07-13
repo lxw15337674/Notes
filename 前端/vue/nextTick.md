@@ -5,3 +5,5 @@ nextTick 可以让我们在下次 DOM 更新循环结束之后执行延迟回调
 ## 详解
 [NextTick 原理分析
 ](http://caibaojian.com/interview-map/frontend/vue.html#nexttick-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90)
+
+[谈一谈 nextTick 的原理](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/281)

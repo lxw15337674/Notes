@@ -1,15 +1,10 @@
 # 从输入URL到页面呈现发生了什么
 ## 主流程
-1. 输入url
-2. 开启网络请求线程
-2. 网络请求
-    1. 查找强缓存
-    2. DNS解析
-    3. TCP连接
-    4. 发送HTTP请求
-2. 服务器处理请求
-3. 浏览器解析渲染页面，
-
+1. DNS解析
+2. TCP连接
+3. HTTP请求与响应
+4. 客户端浏览器解析渲染
+5. 连接结束
 ## 详细流程
 ### 从输入url到开启网络请求线程
 > URL中文名叫做统一资源定位符。
@@ -76,3 +71,8 @@
 ## 引用
 [神三元](http://47.98.159.95/my_blog/browser-render/001.html)
 [浏览器层合成与页面渲染优化](https://juejin.im/post/5da52531518825094e373372)
+
+[[各种公司] 输入url后发生了什么](https://juejin.im/post/6844904110471249934#heading-3)
+
+[面试官：浏览器输入URL后发生了什么？
+](https://mp.weixin.qq.com/s?__biz=MzI0MzIyMDM5Ng==&mid=2649826404&idx=1&sn=e4ccac5fe9d96b26ca1d8d347276d2b1&chksm=f175eea7c60267b1b5b91e527dcdf81027f2f36c97cb1837b13ffbb5a1699e013a77f84d1d16&scene=21#wechat_redirect)
