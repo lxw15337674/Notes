@@ -82,3 +82,5 @@ Function.prototype.myBind= function(obj,...args){
         return fn
     }
 ```
+
+> 参考:https://segmentfault.com/a/1190000018017796
