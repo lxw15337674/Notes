@@ -1,5 +1,5 @@
 # script 元素
- 
+
 `<script>、<script async>和<script defer>的区别`
 - `<script>` : 加载的时候是同步的会阻塞后面代码的执行，加载立即执行。
 - `<script async>`: 异步加载，加载和执行是并行的，即下载完就执行。

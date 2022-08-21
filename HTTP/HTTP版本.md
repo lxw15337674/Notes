@@ -83,5 +83,4 @@ HTTP是一种`超文本传输协议（Hypertext Transfer Protocol)`，HTTP是一
 
 [HTTP协议头部与Keep-Alive](https://www.cnblogs.com/happy-king/p/9603395.html)
 [解读HTTP/2 及 HTTP/3特性](https://github.com/ljianshu/Blog/issues/57)
-[HTTP/1.0、HTTP/1.1、HTTP/2、HTTPS
-](https://zhuanlan.zhihu.com/p/43787334)
+[HTTP/1.0、HTTP/1.1、HTTP/2、HTTPS](https://zhuanlan.zhihu.com/p/43787334)

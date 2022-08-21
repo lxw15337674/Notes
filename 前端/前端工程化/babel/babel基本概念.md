@@ -7,9 +7,9 @@
 - JS 源码转换
 
 ## 用途
-Babel 只负责编译新标准引入的新语法，比如 Arrow function、Class、ES Modul 等。  
+Babel 只负责编译新标准引入的新语法，比如 Arrow function、Class、ES Modul 等。 
 它不会编译原生对象新引入的方法和 API，比如 Array.includes，Map，Set 等，这些需要通过 Polyfill 来解决
-polyfill 的翻译过来就是垫片，垫片就是垫平不同浏览器环境的差异，让大家都一样。   
+polyfill 的翻译过来就是垫片，垫片就是垫平不同浏览器环境的差异，让大家都一样。 
 @babel/polyfill 模块可以模拟完整的 ES5 环境。
 
 ## 基本原理
@@ -98,35 +98,11 @@ npm install --save @babel/runtime
 
 #### @babel/preset-env
  @babel/preset-env 是根据浏览器的不同版本中缺失的功能确定代码转换规则的，在配置的时候我们只需要配置需要支持的浏览器版本就好了，@babel/preset-env 会根据目标浏览器生成对应的插件列表然后进行编译。  
- 
+
  在默认情况下 @babel/preset-env 支持将 JS 目前最新的语法转成 ES5，但需要注意的是，如果你代码中用到了还没有成为 JS 标准的语法，该语法暂时还处于 stage 阶段，这个时候还是需要安装对应的 stage 预设，不然编译会报错。
- 
- @babel/preset-env 在默认情况下和 preset-stage-x 一样只编译语法，不会对新方法和新的原生对象进行转译
-
-##### useBuiltIns  
-回过头来再说 @babel/preset-env，他出现的目的就是实现民族大统一，连 stage-x 都干掉了，又怎么会漏掉 Polyfill 这一功能，在 @babel/preset-env 的配置项中提供了 useBuiltIns 这一参数，只要在使用 @babel/preset-env 的时候带上他，Babel 在编译的时候就会自动进行 Polyfill ，不再需要手动的在代码中引入@babel/polyfill 了，同时还能做到按需加载。
-
-useBuiltIns 配置参数：
-- false：此时不对Polyfill 做操作，如果引入 @babel/polyfill 则不会按需加载，会将所有代码引入
-- usage：会根据配置的浏览器兼容性，以及你代码中使用到的 API 来进行 Polyfill ，实现按需加载
-- entry：会根据配置的浏览器兼容性，以及你代码中使用到的 API 来进行 Polyfill ，实现按需加载，不过需要在入口文件中手动加上import ' @babel/polyfill'
-
-```
-{
-  "presets": [
-    "@babel/preset-flow",
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "node": "8.10"
-        },
-        "corejs": "3", // 声明 corejs 版本
-        "useBuiltIns": "usage"
-      }
-    ]
-  ]
-}
-```
 
 
+
+>  参考
+>
+> [深入浅出 Babel](https://juejin.im/post/5d94bfbf5188256db95589be)

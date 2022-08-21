@@ -28,9 +28,10 @@ process.nextTick 是一个独立于 eventLoop 的任务队列。
 在每一个 eventLoop 阶段完成后会去检查这个队列，如果里面有任务，会让这部分任务优先于微任务执行。
 
 ## 引用
+
 - [一文带你搞懂JavaScript事件循环](
 https://juejin.im/post/5d2036106fb9a07eb15d76e9 )
-- [阮一峰：JavaScript 运行机制详解：再谈Event Loop
+- [：JavaScript 运行机制详解：再谈Event Loop
 ](http://www.ruanyifeng.com/blog/2014/10/event-loop.html )
 - [这一次，彻底弄懂 JavaScript 执行机制
 ](https://juejin.im/post/59e85eebf265da430d571f89 ) 
